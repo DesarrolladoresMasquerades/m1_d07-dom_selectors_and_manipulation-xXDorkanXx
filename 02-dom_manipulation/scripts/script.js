@@ -26,13 +26,24 @@ function addToDoItem(text){
     document.getElementById("items-list").appendChild(newToDo);
 };
 
+/*
+function KeyboardEvent(
+
+    if(event.keyCode === 13){
+        const inputToDo = document.querySelector("[name='to-do-item']");
+        inputToDo.addToDoItem(inputToDo.value);
+        inputToDo.focus();
+        inputToDo.value = "";
+    }
+);
+*/
+
 actionButton.addEventListener(
     "click",
     (event)=> {   //actionOnClick
         // console.log("button clicked", event);
 
         // we select an element from inside the action
-        
         const inputToDo = document.querySelector("[name='to-do-item']");
         event.addToDoItem(inputToDo.value);
         inputToDo.focus();
