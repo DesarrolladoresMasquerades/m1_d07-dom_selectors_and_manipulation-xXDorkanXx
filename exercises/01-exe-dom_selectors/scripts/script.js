@@ -67,7 +67,7 @@ console.log(document.querySelector(".list-veggies ul"));
 
 // 9: Add a class 'veggie-love' to all the veggies
 
-arrVeggies.forEach(element => element.className += " veggie-love"); //arrVeggies.forEach(element => element.classList.add("veggie-love"));
+arrVeggies.forEach(element => element.className += " veggie-love"); //BETTER ===> arrVeggies.forEach(element => element.classList.add("veggie-love"));
 
 arrVeggies.forEach(element => console.log(element));
 
